@@ -34,7 +34,6 @@ When encountering bugs, check the troubleshooting section. If the issue is still
 
 ![metadata](assets/metadata.jpg)
 ![amp](assets/amp.jpg)
-![lyric](assets/lyric.jpg)
 
 ## Download
 
