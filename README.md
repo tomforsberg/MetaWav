@@ -6,7 +6,7 @@ MetaWav is an audio library designed for musicians, producers, and audio enginee
 
 ## Background
 
-This project was taken on during the middle of 2025. The idea was to build a music app with a UI similar to a close family members Rotel 90's hifi stack. Initially designed in Framer, this project was then developed in Swift, using AI tools to help with the advanced elements of implementation. Button presses, clicks and various sounds were recorded from the original units to add a tactile and vintage feel to the player.
+This project was taken on during the middle of 2025. The idea was to build a music app with a UI similar to a close family members Rotel 90's hifi stack. Initially designed in Figma, this project was then developed in Swift, using AI tools to help with the advanced elements of implementation. Button presses, clicks and various sounds were recorded from the original units to add a tactile and vintage feel to the player.
 
 This idea evolved into being able to add additional metadata with an attached file. After various additions and changes made, the current version was mostly complete towards the end of 2025, and includes advanced metadata such as BPM, key, credits & time coded lyrics. To be able to use graphical equalisers often found in hifi stacks, adding AU plugin support became an priority. Then additional controls and library features were added such as scrubbing, playlists and artist profiles. The final touches included simple things such as highlighting on selected, indenting on hover, and implementing new Liquid Glass features from macOS Tahoe.
 
