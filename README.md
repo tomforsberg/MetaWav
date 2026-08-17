@@ -35,6 +35,8 @@ When encountering bugs, check the troubleshooting section. If the issue is still
 ![metadata](assets/metadata.jpg)
 ![amp](assets/amp.jpg)
 
+The UA 1176 image shown is property of Universal Audio and is used for illustrative/reference purposes only. Download the UA 1176 FET Compressor [HERE](https://www.uaudio.com/products/ua-1176-fet?srsltid=AfmBOooCQSBNQ8JkIxe9HzhiqGlyzLQh4K7QBckKryJr8zcs1FZMTZIa)
+
 ## Download
 
 Latest build: [Releases](https://github.com/tomforsberg/MetaWav/releases)
