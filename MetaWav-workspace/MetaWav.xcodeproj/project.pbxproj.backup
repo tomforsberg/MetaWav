@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E207795E2E68D62500285D60 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E207795D2E68D62500285D60 /* AudioToolbox.framework */; };
+		E20779602E68D62F00285D60 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E207795F2E68D62F00285D60 /* AudioUnit.framework */; };
+		E20779632E68D63900285D60 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20779612E68D63900285D60 /* CoreAudio.framework */; };
+		E20779642E68D63900285D60 /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20779622E68D63900285D60 /* CoreAudioKit.framework */; };
+		E20779662E68D64500285D60 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20779652E68D64500285D60 /* CoreMIDI.framework */; };
+		E20779682E68D64C00285D60 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20779672E68D64C00285D60 /* CoreServices.framework */; };
+		E207796A2E68D65800285D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20779692E68D65800285D60 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E216D4A62E44DDE7009652AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E216D48F2E44DDE6009652AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E216D4962E44DDE6009652AC;
+			remoteInfo = MetaWav;
+		};
+		E216D4B02E44DDE7009652AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E216D48F2E44DDE6009652AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E216D4962E44DDE6009652AC;
+			remoteInfo = MetaWav;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2075FDF2E68D61200285D60 /* DemoRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DemoRunner.xcodeproj; sourceTree = "<group>"; };
+		E2075FE62E68D61200285D60 /* DemoRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DemoRunner.xcodeproj; sourceTree = "<group>"; };
+		E20760BB2E68D61300285D60 /* AudioPerformanceTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPerformanceTest.xcodeproj; sourceTree = "<group>"; };
+		E20760C12E68D61300285D60 /* AudioPerformanceTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPerformanceTest.xcodeproj; sourceTree = "<group>"; };
+		E207618F2E68D61300285D60 /* AudioPluginHost.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPluginHost.xcodeproj; sourceTree = "<group>"; };
+		E20761962E68D61300285D60 /* AudioPluginHost.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPluginHost.xcodeproj; sourceTree = "<group>"; };
+		E20761E52E68D61300285D60 /* BinaryBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BinaryBuilder.xcodeproj; sourceTree = "<group>"; };
+		E20762492E68D61300285D60 /* NetworkGraphicsDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NetworkGraphicsDemo.xcodeproj; sourceTree = "<group>"; };
+		E207624F2E68D61300285D60 /* NetworkGraphicsDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NetworkGraphicsDemo.xcodeproj; sourceTree = "<group>"; };
+		E207628C2E68D61300285D60 /* Projucer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Projucer.xcodeproj; sourceTree = "<group>"; };
+		E207636C2E68D61300285D60 /* UnitTestRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UnitTestRunner.xcodeproj; sourceTree = "<group>"; };
+		E207795D2E68D62500285D60 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E207795F2E68D62F00285D60 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		E20779612E68D63900285D60 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E20779622E68D63900285D60 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		E20779652E68D64500285D60 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		E20779672E68D64C00285D60 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		E20779692E68D65800285D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E297FC662E44F6010084C77F /* MetaWav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaWav.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E297FC672E44F6010084C77F /* MetaWavTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaWavTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E297FC682E44F6010084C77F /* MetaWavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetaWavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2F4A1602E68D7C6007461EB /* DemoRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DemoRunner.xcodeproj; sourceTree = "<group>"; };
+		E2F4A16A2E68D7C6007461EB /* DemoRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = DemoRunner.xcodeproj; sourceTree = "<group>"; };
+		E2F4A2422E68D7C6007461EB /* AudioPerformanceTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPerformanceTest.xcodeproj; sourceTree = "<group>"; };
+		E2F4A24B2E68D7C6007461EB /* AudioPerformanceTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPerformanceTest.xcodeproj; sourceTree = "<group>"; };
+		E2F4A31C2E68D7C6007461EB /* AudioPluginHost.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPluginHost.xcodeproj; sourceTree = "<group>"; };
+		E2F4A3262E68D7C6007461EB /* AudioPluginHost.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = AudioPluginHost.xcodeproj; sourceTree = "<group>"; };
+		E2F4A3772E68D7C6007461EB /* BinaryBuilder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BinaryBuilder.xcodeproj; sourceTree = "<group>"; };
+		E2F4A3DE2E68D7C6007461EB /* NetworkGraphicsDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NetworkGraphicsDemo.xcodeproj; sourceTree = "<group>"; };
+		E2F4A3E72E68D7C6007461EB /* NetworkGraphicsDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = NetworkGraphicsDemo.xcodeproj; sourceTree = "<group>"; };
+		E2F4A4272E68D7C6007461EB /* Projucer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Projucer.xcodeproj; sourceTree = "<group>"; };
+		E2F4A5092E68D7C6007461EB /* UnitTestRunner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UnitTestRunner.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E216D4992E44DDE6009652AC /* MetaWav */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MetaWav;
+			sourceTree = "<group>";
+		};
+		E216D4A82E44DDE7009652AC /* MetaWavTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MetaWavTests;
+			sourceTree = "<group>";
+		};
+		E216D4B22E44DDE7009652AC /* MetaWavUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MetaWavUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E216D4942E44DDE6009652AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E20779642E68D63900285D60 /* CoreAudioKit.framework in Frameworks */,
+				E20779682E68D64C00285D60 /* CoreServices.framework in Frameworks */,
+				E20779662E68D64500285D60 /* CoreMIDI.framework in Frameworks */,
+				E20779602E68D62F00285D60 /* AudioUnit.framework in Frameworks */,
+				E20779632E68D63900285D60 /* CoreAudio.framework in Frameworks */,
+				E207796A2E68D65800285D60 /* Foundation.framework in Frameworks */,
+				E207795E2E68D62500285D60 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216D4A22E44DDE7009652AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216D4AC2E44DDE7009652AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E20770EA2E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770EC2E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770EE2E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770F02E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770F22E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770F42E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770F62E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770F82E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770FA2E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770FC2E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E20770FE2E68D61600285D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E216D48E2E44DDE6009652AC = {
+			isa = PBXGroup;
+			children = (
+				E216D4992E44DDE6009652AC /* MetaWav */,
+				E216D4A82E44DDE7009652AC /* MetaWavTests */,
+				E216D4B22E44DDE7009652AC /* MetaWavUITests */,
+				E297FC662E44F6010084C77F /* MetaWav.app */,
+				E297FC672E44F6010084C77F /* MetaWavTests.xctest */,
+				E297FC682E44F6010084C77F /* MetaWavUITests.xctest */,
+				E297FCA92E44F6290084C77F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E297FCA92E44F6290084C77F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E20779692E68D65800285D60 /* Foundation.framework */,
+				E20779672E68D64C00285D60 /* CoreServices.framework */,
+				E20779652E68D64500285D60 /* CoreMIDI.framework */,
+				E20779612E68D63900285D60 /* CoreAudio.framework */,
+				E20779622E68D63900285D60 /* CoreAudioKit.framework */,
+				E207795F2E68D62F00285D60 /* AudioUnit.framework */,
+				E207795D2E68D62500285D60 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2F4B2B62E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2B82E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2BA2E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2BC2E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2BE2E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2C02E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2C22E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2C42E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2C62E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2C82E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2F4B2CA2E68D7C6007461EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E216D4962E44DDE6009652AC /* MetaWav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E216D4B92E44DDE7009652AC /* Build configuration list for PBXNativeTarget "MetaWav" */;
+			buildPhases = (
+				E216D4932E44DDE6009652AC /* Sources */,
+				E216D4942E44DDE6009652AC /* Frameworks */,
+				E216D4952E44DDE6009652AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E216D4992E44DDE6009652AC /* MetaWav */,
+			);
+			name = MetaWav;
+			packageProductDependencies = (
+			);
+			productName = MetaWav;
+			productReference = E297FC662E44F6010084C77F /* MetaWav.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E216D4A42E44DDE7009652AC /* MetaWavTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E216D4BC2E44DDE7009652AC /* Build configuration list for PBXNativeTarget "MetaWavTests" */;
+			buildPhases = (
+				E216D4A12E44DDE7009652AC /* Sources */,
+				E216D4A22E44DDE7009652AC /* Frameworks */,
+				E216D4A32E44DDE7009652AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E216D4A72E44DDE7009652AC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E216D4A82E44DDE7009652AC /* MetaWavTests */,
+			);
+			name = MetaWavTests;
+			packageProductDependencies = (
+			);
+			productName = MetaWavTests;
+			productReference = E297FC672E44F6010084C77F /* MetaWavTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E216D4AE2E44DDE7009652AC /* MetaWavUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E216D4BF2E44DDE7009652AC /* Build configuration list for PBXNativeTarget "MetaWavUITests" */;
+			buildPhases = (
+				E216D4AB2E44DDE7009652AC /* Sources */,
+				E216D4AC2E44DDE7009652AC /* Frameworks */,
+				E216D4AD2E44DDE7009652AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E216D4B12E44DDE7009652AC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E216D4B22E44DDE7009652AC /* MetaWavUITests */,
+			);
+			name = MetaWavUITests;
+			packageProductDependencies = (
+			);
+			productName = MetaWavUITests;
+			productReference = E297FC682E44F6010084C77F /* MetaWavUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E216D48F2E44DDE6009652AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					E216D4962E44DDE6009652AC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E216D4A42E44DDE7009652AC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E216D4962E44DDE6009652AC;
+					};
+					E216D4AE2E44DDE7009652AC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E216D4962E44DDE6009652AC;
+					};
+				};
+			};
+			buildConfigurationList = E216D4922E44DDE6009652AC /* Build configuration list for PBXProject "MetaWav" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E216D48E2E44DDE6009652AC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E2075E7E2E68D3DF00285D60 /* XCRemoteSwiftPackageReference "JUCE" */,
+				E2F4BB7C2E68D8F1007461EB /* XCRemoteSwiftPackageReference "AudioKit" */,
+				E2F4BB7D2E68D90C007461EB /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+				E2F4BB7E2E68D927007461EB /* XCRemoteSwiftPackageReference "Controls" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E216D48E2E44DDE6009652AC;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E20770EE2E68D61600285D60 /* Products */;
+					ProjectRef = E20760BB2E68D61300285D60 /* AudioPerformanceTest.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2CA2E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A2422E68D7C6007461EB /* AudioPerformanceTest.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2C62E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A24B2E68D7C6007461EB /* AudioPerformanceTest.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770FA2E68D61600285D60 /* Products */;
+					ProjectRef = E20760C12E68D61300285D60 /* AudioPerformanceTest.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2BE2E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A3262E68D7C6007461EB /* AudioPluginHost.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770F02E68D61600285D60 /* Products */;
+					ProjectRef = E207618F2E68D61300285D60 /* AudioPluginHost.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770F82E68D61600285D60 /* Products */;
+					ProjectRef = E20761962E68D61300285D60 /* AudioPluginHost.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2B62E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A31C2E68D7C6007461EB /* AudioPluginHost.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770F62E68D61600285D60 /* Products */;
+					ProjectRef = E20761E52E68D61300285D60 /* BinaryBuilder.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2C42E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A3772E68D7C6007461EB /* BinaryBuilder.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770EA2E68D61600285D60 /* Products */;
+					ProjectRef = E2075FDF2E68D61200285D60 /* DemoRunner.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2BC2E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A1602E68D7C6007461EB /* DemoRunner.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770FE2E68D61600285D60 /* Products */;
+					ProjectRef = E2075FE62E68D61200285D60 /* DemoRunner.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2C22E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A16A2E68D7C6007461EB /* DemoRunner.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2BA2E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A3E72E68D7C6007461EB /* NetworkGraphicsDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770F22E68D61600285D60 /* Products */;
+					ProjectRef = E20762492E68D61300285D60 /* NetworkGraphicsDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2B82E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A3DE2E68D7C6007461EB /* NetworkGraphicsDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770F42E68D61600285D60 /* Products */;
+					ProjectRef = E207624F2E68D61300285D60 /* NetworkGraphicsDemo.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2C02E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A4272E68D7C6007461EB /* Projucer.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770FC2E68D61600285D60 /* Products */;
+					ProjectRef = E207628C2E68D61300285D60 /* Projucer.xcodeproj */;
+				},
+				{
+					ProductGroup = E20770EC2E68D61600285D60 /* Products */;
+					ProjectRef = E207636C2E68D61300285D60 /* UnitTestRunner.xcodeproj */;
+				},
+				{
+					ProductGroup = E2F4B2C82E68D7C6007461EB /* Products */;
+					ProjectRef = E2F4A5092E68D7C6007461EB /* UnitTestRunner.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E216D4962E44DDE6009652AC /* MetaWav */,
+				E216D4A42E44DDE7009652AC /* MetaWavTests */,
+				E216D4AE2E44DDE7009652AC /* MetaWavUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E216D4952E44DDE6009652AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216D4A32E44DDE7009652AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216D4AD2E44DDE7009652AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E216D4932E44DDE6009652AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216D4A12E44DDE7009652AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E216D4AB2E44DDE7009652AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E216D4A72E44DDE7009652AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E216D4962E44DDE6009652AC /* MetaWav */;
+			targetProxy = E216D4A62E44DDE7009652AC /* PBXContainerItemProxy */;
+		};
+		E216D4B12E44DDE7009652AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E216D4962E44DDE6009652AC /* MetaWav */;
+			targetProxy = E216D4B02E44DDE7009652AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E216D4B72E44DDE7009652AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E216D4B82E44DDE7009652AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E216D4BA2E44DDE7009652AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MetaWav/MetaWav.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GQU3CTU996;
+				ENABLE_PREVIEWS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fors-Audio.MetaWav";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E216D4BB2E44DDE7009652AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = MetaWav/MetaWav.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GQU3CTU996;
+				ENABLE_PREVIEWS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"$(SRCROOT)/Sources/CppEngine",
+					"$(SRCROOT)/Sources/JUCE/modules",
+				);
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"-std=c++17",
+					"-DJUCE_APP_CONFIG_HEADER=\"<AppConfig.h>\"",
+					"-DJUCE_WEB_BROWSER=0",
+					"-DJUCE_USE_CURL=0",
+					"-DJUCE_APPLICATION_NAME_STRING=\"MetaWav\"",
+					"-DJUCE_APPLICATION_VERSION_STRING=\"1.0.0\"",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fors-Audio.MetaWav";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[sdk=*]" = " Sources/Bridging/MetaWav-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E216D4BD2E44DDE7009652AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fors-Audio.MetaWavTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaWav.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetaWav";
+			};
+			name = Debug;
+		};
+		E216D4BE2E44DDE7009652AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fors-Audio.MetaWavTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MetaWav.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MetaWav";
+			};
+			name = Release;
+		};
+		E216D4C02E44DDE7009652AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fors-Audio.MetaWavUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MetaWav;
+			};
+			name = Debug;
+		};
+		E216D4C12E44DDE7009652AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Fors-Audio.MetaWavUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MetaWav;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E216D4922E44DDE6009652AC /* Build configuration list for PBXProject "MetaWav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E216D4B72E44DDE7009652AC /* Debug */,
+				E216D4B82E44DDE7009652AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E216D4B92E44DDE7009652AC /* Build configuration list for PBXNativeTarget "MetaWav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E216D4BA2E44DDE7009652AC /* Debug */,
+				E216D4BB2E44DDE7009652AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E216D4BC2E44DDE7009652AC /* Build configuration list for PBXNativeTarget "MetaWavTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E216D4BD2E44DDE7009652AC /* Debug */,
+				E216D4BE2E44DDE7009652AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E216D4BF2E44DDE7009652AC /* Build configuration list for PBXNativeTarget "MetaWavUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E216D4C02E44DDE7009652AC /* Debug */,
+				E216D4C12E44DDE7009652AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2075E7E2E68D3DF00285D60 /* XCRemoteSwiftPackageReference "JUCE" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/juce-framework/JUCE.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.9;
+			};
+		};
+		E2F4BB7C2E68D8F1007461EB /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.5;
+			};
+		};
+		E2F4BB7D2E68D90C007461EB /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.3;
+			};
+		};
+		E2F4BB7E2E68D927007461EB /* XCRemoteSwiftPackageReference "Controls" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/Controls";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = E216D48F2E44DDE6009652AC /* Project object */;
+}
